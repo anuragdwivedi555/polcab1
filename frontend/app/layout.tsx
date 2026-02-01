@@ -23,7 +23,7 @@ export const metadata = {
   description: "Minimal, functional ride-sharing dApp on Polygon Amoy Testnet. Trustless, peer-to-peer, powered by smart contracts.",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="dark">
       <body className={`${geistSans.variable} ${geistMono.variable} ${righteous.variable} antialiased`}>
