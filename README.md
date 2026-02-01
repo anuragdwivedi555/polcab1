@@ -10,14 +10,14 @@ The system consists of a Next.js frontend and a Solidity smart contract. GPS and
 
 ```mermaid
 graph TD
-    Rider[User / Rider] -->|1. Request Ride (locks fare)| Contract[Smart Contract]
-    Contract -->|Emit Event: RideRequested| Driver[Driver Dashboard]
-    Driver -->|2. Accept Ride| Contract
-    Contract -->|Ride Status: Accepted| Rider
-    Driver -->|3. Complete Service| Rider
-    Rider -->|4. Confirm Completion| Contract
-    Contract -->|5. Release Payment| Driver
-    Contract -->|6. Platform Fee (2%)| Owner
+    Rider[User / Rider] -->|"1. Request Ride (locks fare)"| Contract[Smart Contract]
+    Contract -->|"Emit Event: RideRequested"| Driver[Driver Dashboard]
+    Driver -->|"2. Accept Ride"| Contract
+    Contract -->|"Ride Status: Accepted"| Rider
+    Driver -->|"3. Complete Service"| Rider
+    Rider -->|"4. Confirm Completion"| Contract
+    Contract -->|"5. Release Payment"| Driver
+    Contract -->|"6. Platform Fee (2%)"| Owner
 ```
 
 ---
